@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Perguntas sobre o Japão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo de Perguntas sobre o Japão</h1>
+        <div id="quiz-container">
+            <p id="question">Qual é a capital do Japão?</p>
+            <div class="options">
+                <button class="option" onclick="checkAnswer('Tóquio')">Tóquio</button>
+                <button class="option" onclick="checkAnswer('Quioto')">Quioto</button>
+                <button class="option" onclick="checkAnswer('Osaka')">Osaka</button>
+                <button class="option" onclick="checkAnswer('Hokkaido')">Hokkaido</button>
+            </div>
+        </div>
+        <div id="result"></div>
+        <button id="next-button" onclick="nextQuestion()">Próxima Pergunta</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
